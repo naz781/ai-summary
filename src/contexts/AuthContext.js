@@ -4,7 +4,6 @@ import {
     signInWithEmailAndPassword,
     signOut,
     onAuthStateChanged,
-    GoogleAuthProvider,
     signInWithPopup,
     sendPasswordResetEmail,
     updateProfile,
