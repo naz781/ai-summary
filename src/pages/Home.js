@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaMagic } from 'react-icons/fa';
-import '../styles/textbox.css';
+// import '../styles/textbox.css';
 
 export default function Home() {
     const [content, setContent] = useState("");
@@ -49,7 +49,7 @@ export default function Home() {
     };
 
     return (
-        <>
+        <><div className="box">
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-12 mx-auto">
                     <div className="flex flex-col text-center w-full mb-8">
@@ -72,7 +72,7 @@ export default function Home() {
                                     id="message"
                                     name="message"
                                     className="enhanced-textbox"
-                                    placeholder="Paste your text here..."
+
                                 />
                             </div>
                         </div>
@@ -115,6 +115,7 @@ export default function Home() {
                     </div>
                 </section>
             )}
+        </div>
         </>
     );
 } 

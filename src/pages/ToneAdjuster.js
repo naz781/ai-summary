@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { FaFeather } from 'react-icons/fa';
-import '../styles/textbox.css';
+// import '../styles/textbox.css';
 
 export default function ToneAdjuster() {
     const [content, setContent] = useState("");
-    const [tone, setTone] = useState("professional");
+    const [style, setStyle] = useState("professional");
     const [adjusted, setAdjusted] = useState("");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
-    const toneOptions = [
+    const styleOptions = [
         "professional",
         "casual",
         "friendly",
@@ -34,11 +34,11 @@ export default function ToneAdjuster() {
                 messages: [
                     {
                         role: "system",
-                        content: `You are a helpful assistant that adjusts the tone of text to be more ${tone} while maintaining the original message.`,
+                        content: `You are a helpful assistant that adjusts the tone of text to be more ${style} while maintaining the original message.`,
                     },
                     {
                         role: "user",
-                        content: `Please rewrite the following text in a ${tone} tone while keeping the same meaning: ${content}`
+                        content: `Please rewrite the following text in a ${style} tone while keeping the same meaning: ${content}`
                     },
                 ],
             };
@@ -63,10 +63,10 @@ export default function ToneAdjuster() {
     };
 
     return (
-        <>
+        <><div className="box">
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 py-12 mx-auto">
-                    <div className="flex flex-col text-center w-full mb-8">
+                    <div className="flex flex-col text-center w-full mb-12">
                         <div className="flex items-center justify-center mb-4">
                             <FaFeather className="text-4xl text-indigo-500 mr-2" />
                             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">ToneCraft Pro</h1>
@@ -76,17 +76,19 @@ export default function ToneAdjuster() {
                         </p>
                     </div>
 
-                    <div className="content-container max-w-4xl mx-auto">
+
+                    <div className="p-2 w-full">
                         <div className="mb-8">
-                            <label htmlFor="tone" className="block text-sm font-medium text-gray-700 mb-2">Select Tone:</label>
-                            <div className="select-glow">
+                            <label htmlFor="style" className="leading-7 text-sm text-gray-600">Select Style:</label>
+                            <div classname="enhanced-glow">
                                 <select
-                                    id="tone"
-                                    value={tone}
-                                    onChange={(e) => setTone(e.target.value)}
-                                    className="enhanced-select"
+                                    id="style"
+                                    value={style}
+                                    onChange={(e) => setStyle(e.target.value)}
+                                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out focus:border-teal-500 focus:ring-2 focus:ring-teal-300 focus:bg-white"
+
                                 >
-                                    {toneOptions.map((option) => (
+                                    {styleOptions.map((option) => (
                                         <option key={option} value={option}>
                                             {option.charAt(0).toUpperCase() + option.slice(1)}
                                         </option>
@@ -103,7 +105,7 @@ export default function ToneAdjuster() {
                                     id="content"
                                     name="content"
                                     className="enhanced-textbox"
-                                    placeholder="Paste your text here..."
+
                                 />
                             </div>
                         </div>
@@ -131,7 +133,7 @@ export default function ToneAdjuster() {
                         )}
                     </div>
                 </div>
-            </section>
+            </section >
             {adjusted && (
                 <section className="text-gray-600 body-font relative">
                     <div className="container px-5 py-12 mx-auto">
@@ -145,7 +147,9 @@ export default function ToneAdjuster() {
                         </div>
                     </div>
                 </section>
-            )}
+            )
+            }
+        </div >
         </>
     );
 } 

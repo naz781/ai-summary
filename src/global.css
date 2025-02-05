@@ -1,0 +1,103 @@
+/* Global Styles for consistent box size */
+.box {
+    width: 100%;
+    max-width: 600px;  /* Set a maximum width */
+    min-height: 300px; /* Set a minimum height */
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Optional: You can add additional customizations for box sizes */
+.box-large {
+    min-height: 400px;
+}
+
+.box-small {
+    min-height: 200px;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #f8fafc;
+    color: #374151;
+    margin: 0;
+    padding: 0;
+}
+
+/* Consistent Container */
+.page-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Consistent Button Styling */
+.primary-button {
+    background-color: #6366f1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #4f46e5;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.5);
+}
+
+/* Enhanced Textbox */
+.enhanced-textbox {
+    width: 100%;
+    min-height: 150px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #374151;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: vertical;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(55, 65, 81, 0.3);
+    border-radius: 5px;
+}
+
+.enhanced-textbox:focus {
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+    border-color: #6366f1;
+}
+
+/* Select Dropdown */
+.enhanced-select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #374151;
+    background-color: transparent;
+    border: 1px solid rgba(55, 65, 81, 0.3);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.enhanced-select:focus {
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+    border-color: #6366f1;
+}
+
+/* Consistent Heading */
+h1, h2, h3 {
+    color: #1e293b;
+    font-weight: bold;
+    text-align: center;
+}
