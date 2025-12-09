@@ -14,7 +14,6 @@ A web application that leverages the OpenAI API to generate AI-powered summaries
 - **AI Integration:** OpenAI API
 - **Email Integration:** EmailJS (for contact forms)
 
-> Replace `#` with your deployed link (Vercel, Netlify, or Firebase Hosting)
 
 ## Installation
 
