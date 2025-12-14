@@ -49,6 +49,5 @@ Generate AI summaries using the OpenAI API
 Use the contact form powered by EmailJS (optional)
 
 ### Screenshots
-
-Add screenshots or GIFs of your application here
+https://github.com/naz781/ai-summary/blob/main/public/aiScreen.png
 
