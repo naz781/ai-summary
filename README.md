@@ -51,5 +51,5 @@ Use the contact form powered by EmailJS (optional)
 ### Screenshots
 https://github.com/naz781/ai-summary/blob/main/public/aiScreen.png
 https://github.com/naz781/ai-summary/blob/main/public/aiScreen2.png
-https://github.com/naz781/ai-summary/blob/main/public/aiScreen3.png
+(https://github.com/naz781/ai-summary/blob/main/public/aiScreen3.png)
 
