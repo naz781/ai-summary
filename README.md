@@ -51,9 +51,9 @@ Use the contact form powered by EmailJS (optional)
 ### Screenshots
 <img width="628" height="382" alt="image" src="https://github.com/user-attachments/assets/1ed83367-40bd-4e4f-bd85-b3671e7ab3b9" />
 <img width="618" height="383" alt="image" src="https://github.com/user-attachments/assets/a178155b-0ac1-4344-9730-beb647d63ae9" />
+<img width="623" height="383" alt="image" src="https://github.com/user-attachments/assets/f1788bd2-ab9c-484f-ab0d-a6ae52aa90e4" />
 
 
-https://github.com/naz781/ai-summary/blob/main/public/aiScreen.png
-https://github.com/naz781/ai-summary/blob/main/public/aiScreen2.png
-(https://github.com/naz781/ai-summary/blob/main/public/aiScreen3.png)
+
+
 
